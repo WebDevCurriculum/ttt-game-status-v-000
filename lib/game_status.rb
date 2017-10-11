@@ -25,6 +25,7 @@ def won?(board)
     i = 0
     if for_the_win.include?(WIN_COMBINATIONS[i])
       puts "you are #{for_the_win} position."
+      i += 1
     #if for_the_win[0] && for_the_win[1] && for_the_win(2) == "X"
     #  puts "X player has won the game"
  #!position_taken?(board,index)
