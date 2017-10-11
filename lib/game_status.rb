@@ -24,13 +24,13 @@ def won?(board)
   WIN_COMBINATIONS.select do |for_the_win|
   
       for_the_win.include?(board[i])
-      
+
     #if for_the_win[0] && for_the_win[1] && for_the_win(2) == "X"
     #  puts "X player has won the game"
  #!position_taken?(board,index)
   #  return board
   end
-end
+
 end
   won?(["X", "X", "X", "O", "X", "X", "O", "X", "O"])
 
