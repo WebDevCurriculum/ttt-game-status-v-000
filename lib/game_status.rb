@@ -20,6 +20,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   # check the board to see if any of the winning combinations are on the board 
+  # board[index range]
   WIN_COMBINATIONS.select do |for_the_win|
     for_the_win.include?("X")
     #if for_the_win[0] && for_the_win[1] && for_the_win(2) == "X"
