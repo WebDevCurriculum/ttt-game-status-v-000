@@ -22,10 +22,9 @@ def won?(board)
   # check the board to see if any of the winning combinations are on the board
   # board[index range] - or multiple indexes - how do you check multiple indexes at once
   WIN_COMBINATIONS.select do |for_the_win|
-    i = 0
-    if for_the_win.include?(board[i])
-      puts "you are #{for_the_win} position."
-      i += 1
+  
+      for_the_win.include?(board[i])
+      
     #if for_the_win[0] && for_the_win[1] && for_the_win(2) == "X"
     #  puts "X player has won the game"
  #!position_taken?(board,index)
