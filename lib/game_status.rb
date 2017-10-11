@@ -20,6 +20,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.select do |for_the_win|
+    for_the_win.include?("X")
     if for_the_win[0] && for_the_win[1] && for_the_win(2) == "X"
       puts "X player has won the game"
  #!position_taken?(board,index)
